@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>Navigation</title>
+        
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>    
+
+    <!-- Mapbox -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+</head>
+
+<body>
+    <!-- Mapbox Direction Plugin-->
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+        type="text/css">
+
+    <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+    <!-- Body HTML -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center p-5">
+                <h1>AR NAVIGATION</h1>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                <div id="map"></div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center p-5">
+                <button id="navigate-button">Navigate</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- img  links to refer -->
+    <img 
+    id = "tajmahal" 
+    src = "https://www.bing.com/th?id=OIP.yQV9YN97q7-pD-MDLHFaJAHaEK&w=249&h=140&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+    </img>
+
+    <img 
+    id = "lotustemple" 
+    src = "https://th.bing.com/th/id/OIP.O1x9HJEtrjz3tbL0i03ceQHaE8?w=264&h=180&c=7&r=0&o=5&pid=1.7" >
+    
+    </img>
+
+    <img 
+    id = "mysorepalace" 
+    src = "https://th.bing.com/th/id/OIP.TUFpQjUHQf5GlKQaqQOuZQHaEK?pid=ImgDet&rs=1">
+    </img>
+
+    <img 
+    id = "qutubminar" 
+    src = "https://www.bing.com/th?id=OIP.44uJeERSyOF2OBEuu15-NwHaJ4&w=153&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+    </img>
+
+    <img 
+    id = "victoriamemorial" 
+    src = "https://th.bing.com/th/id/OIP.9P9VlO19-UeVOrWv9ioBpAHaE6?w=292&h=194&c=7&r=0&o=5&pid=1.7">
+    </img>
+
+    <img 
+    id = "gatewayofindia" 
+    src = "https://th.bing.com/th/id/OIP.DTXfmmagnoAxRcUEWdajMwHaEo?w=262&h=180&c=7&r=0&o=5&pid=1.7">
+    </img>
+
+    <img 
+    id = "charminar" 
+    src = "https://th.bing.com/th/id/OIP.6B6cZpjKuK1R86RxoXDwnAHaLJ?w=143&h=215&c=7&r=0&o=5&pid=1.7">
+    </img>
+
+    <img 
+    id = "chatrapatishivajitemrinus" 
+    src = "https://th.bing.com/th/id/OIP.2QDWDqy5w5oQNwC0ddZ81wHaDt?w=335&h=174&c=7&r=0&o=5&pid=1.7
+
+
+    ">
+    </img>
+    
+
+
+
+    <!-- CSS and JS -->
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js" type="text/javascript"></script>
+
+</body>
+
+</html>
